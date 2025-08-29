@@ -27,6 +27,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['event-and-talent-management-system-production.up.railway.app', 'localhost', '127.0.0.1']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://event-and-talent-management-system-production.up.railway.app',
+    'http://localhost:8000'
+]
 
 # Application definition
 
