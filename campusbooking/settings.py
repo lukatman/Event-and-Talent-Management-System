@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-s34iia^_!3osnr%mkt@)xv#sy#=y89lwh+fbx-!%2%q62g$x3s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['your-app-name.up.railway.app', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['https://event-and-talent-management-system-production.up.railway.app', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -119,6 +119,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
